@@ -19,13 +19,13 @@ export default function Counter({}: Props) {
 
   // arrow functionları const ile tanımlıyoruz, fonksiyonu başka bir fonksiyona eşitlemeyeceğiz.
   const onIncrement = () => {
-    // counter = counter + 1;
+    //counter = counter + 1;
     setCounter(++counter);
     console.log("onIncrement", counter);
   };
 
   const onDecrement = () => {
-    // counter--;
+    //counter--;
     setCounter(--counter); // setCounter ile state güncelledik.
     console.log("onDecrement", counter);
   };
@@ -33,6 +33,7 @@ export default function Counter({}: Props) {
   // <></> sadece html kodu kapsamak için kullanılan boş elemente fragment denir
 
   // değişeken değeri değiştiğinde return içerisindeki view güncellenemsi için useState hook kullanıyoruz.
+  // state değişince jsx dosyasının güncellenmesi olayına render alma
   return (
     <>
       <div>Sayac : {counter}</div>

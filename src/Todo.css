@@ -1,0 +1,6 @@
+.secili {
+  background-color: green;
+  color:white;
+}
+
+/* not: bir componente eğer bir css tanımlanacak ise bu durumda direk ts de import yazarız. */
